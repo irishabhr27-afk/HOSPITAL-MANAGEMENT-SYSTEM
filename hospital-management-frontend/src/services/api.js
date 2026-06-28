@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hospital-management-system-rhog.onrender.com/api",
+  baseURL: "https://hospital-management-backend-e507.onrender.com/api",
 });
 
 // Automatically attach JWT token to every request
