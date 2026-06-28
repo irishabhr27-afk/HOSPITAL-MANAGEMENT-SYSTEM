@@ -4,22 +4,31 @@ const appointmentSchema = new mongoose.Schema(
   {
     patientName: {
       type: String,
-      required: true,
+      required: [true, "Patient name is required"],
+      trim: true,
+      minlength: [3, "Patient name must be at least 3 characters"],
+      maxlength: [50, "Patient name cannot exceed 50 characters"],
     },
 
     doctorName: {
       type: String,
-      required: true,
+      required: [true, "Doctor name is required"],
+      trim: true,
+      minlength: [3, "Doctor name must be at least 3 characters"],
+      maxlength: [50, "Doctor name cannot exceed 50 characters"],
     },
 
     appointmentDate: {
       type: Date,
-      required: true,
+      required: [true, "Appointment date is required"],
     },
 
     status: {
       type: String,
-      enum: ["Pending", "Confirmed", "Completed", "Cancelled"],
+      enum: {
+        values: ["Pending", "Confirmed", "Completed", "Cancelled"],
+        message: "Invalid appointment status",
+      },
       default: "Pending",
     },
   },

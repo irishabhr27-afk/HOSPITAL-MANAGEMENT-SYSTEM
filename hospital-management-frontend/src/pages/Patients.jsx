@@ -64,11 +64,12 @@ function Patients() {
       const response = await API.get("/patients");
       setPatients(response.data);
     } catch (error) {
-      console.log(error);
+  console.log(error.response.data);
     }
   }
 
   const handleChange = (e) => {
+    console.log(e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -114,7 +115,7 @@ function Patients() {
         });
 
       } else {
-
+        console.log(formData);
         await API.post(
           "/patients",
           formData
@@ -131,37 +132,34 @@ function Patients() {
       fetchPatients();
 
       handleClose();
+} catch (error) {
+  console.log("Status:", error.response?.status);
+  console.log("Response:", error.response?.data);
+  console.log("Message:", error.response?.data?.message);
 
-    } catch (error){
-    console.log(error)
+  setSnackbar({
+    open: true,
+    message: error.response?.data?.message || "Something went wrong",
+    severity: "error",
+  });
+}
 
-      setSnackbar({
-        open: true,
-        message: "Something went wrong",
-        severity: "error",
-      });
+};
 
-    }
+const handleEdit = (patient) => {
+  setEditingId(patient._id);
 
-  };
+  setFormData({
+    name: patient.name,
+    age: patient.age,
+    gender: patient.gender,
+    phone: patient.phone,
+    email: patient.email,
+    bloodGroup: patient.bloodGroup,
+  });
 
-  const handleEdit = (patient) => {
-
-    setEditingId(patient._id);
-
-    setFormData({
-      name: patient.name,
-      age: patient.age,
-      gender: patient.gender,
-      phone: patient.phone,
-      email: patient.email,
-      bloodGroup: patient.bloodGroup,
-    });
-
-    setOpen(true);
-
-  };
-
+  setOpen(true);
+};
   const handleDelete = async (id) => {
 
     if (!window.confirm("Delete this patient?"))
@@ -180,10 +178,13 @@ function Patients() {
       });
 
     } catch (error) {
-      console.log(error);
+  console.log("Status:", error.response?.status);
+  console.log("Response:", error.response?.data);
+  console.log("Message:", error.response?.data?.message);
+
       setSnackbar({
         open: true,
-        message: "Delete failed",
+        message: error.response?.data?.message ||  "Delete failed",
         severity: "error",
       });
 
@@ -244,151 +245,134 @@ function Patients() {
     }}
   >
 
-    <TextField
-      fullWidth
-      placeholder="Search patient..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position="start">
-            <Search />
-          </InputAdornment>
-        ),
-      }}
-    />
+   <TextField
+  fullWidth
+  placeholder="Search patient..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  slotProps={{
+    input: {
+      startAdornment: (
+        <InputAdornment position="start">
+          <Search />
+        </InputAdornment>
+      ),
+    },
+  }}
+/>
 
   </Paper>
 
   {/* ================= DIALOG ================= */}
+<Dialog
+  open={open}
+  onClose={handleClose}
+  fullWidth
+  maxWidth="md"
+>
+  <DialogTitle>
+    {editingId ? "Edit Patient" : "Add Patient"}
+  </DialogTitle>
 
-  <Dialog
-    open={open}
-    onClose={handleClose}
-    fullWidth
-    maxWidth="md"
-  >
+  <DialogContent>
+    <Grid container spacing={2} sx={{ mt: 1 }}>
 
-    <DialogTitle>
-      {editingId ? "Edit Patient" : "Add Patient"}
-    </DialogTitle>
-
-    <DialogContent>
-
-      <Grid
-        container
-        spacing={2}
-        mt={1}
-      >
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            fullWidth
-            label="Patient Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            fullWidth
-            type="number"
-            label="Age"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-          />
-
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            select
-            fullWidth
-            label="Gender"
-            name="gender"
-            value={formData.gender}
-            onChange={handleChange}
-          >
-
-            <MenuItem value="Male">
-              Male
-            </MenuItem>
-
-            <MenuItem value="Female">
-              Female
-            </MenuItem>
-
-            <MenuItem value="Other">
-              Other
-            </MenuItem>
-
-          </TextField>
-
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            fullWidth
-            label="Phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            fullWidth
-            label="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-
-          <TextField
-            fullWidth
-            label="Blood Group"
-            name="bloodGroup"
-            value={formData.bloodGroup}
-            onChange={handleChange}
-          />
-
-        </Grid>
-
+      <Grid item xs={12} md={6}>
+        <TextField
+          fullWidth
+          label="Patient Name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
       </Grid>
 
-    </DialogContent>
+      <Grid item xs={12} md={6}>
+        <TextField
+          fullWidth
+          type="number"
+          label="Age"
+          name="age"
+          value={formData.age}
+          onChange={handleChange}
+        />
+      </Grid>
 
-    <DialogActions>
+      <Grid item xs={12} md={6}>
+        <TextField
+          select
+          fullWidth
+          label="Gender"
+          name="gender"
+          value={formData.gender}
+          onChange={handleChange}
+        >
+          <MenuItem value="">Select Gender</MenuItem>
+          <MenuItem value="Male">Male</MenuItem>
+          <MenuItem value="Female">Female</MenuItem>
+          <MenuItem value="Other">Other</MenuItem>
+        </TextField>
+      </Grid>
 
-      <Button onClick={handleClose}>
-        Cancel
-      </Button>
+      <Grid item xs={12} md={6}>
+        <TextField
+          fullWidth
+          label="Phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+        />
+      </Grid>
 
-      <Button
-        variant="contained"
-        onClick={handleSubmit}
-      >
-        {editingId ? "Update" : "Save"}
-      </Button>
+      <Grid item xs={12} md={6}>
+        <TextField
+          fullWidth
+          label="Email"
+          name="email"
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </Grid>
 
-    </DialogActions>
+      <Grid item xs={12} md={6}>
+        <TextField
+          select
+          fullWidth
+          label="Blood Group"
+          name="bloodGroup"
+          value={formData.bloodGroup}
+          onChange={handleChange}
+        >
+          <MenuItem value="">Select Blood Group</MenuItem>
+          <MenuItem value="A+">A+</MenuItem>
+          <MenuItem value="A-">A-</MenuItem>
+          <MenuItem value="B+">B+</MenuItem>
+          <MenuItem value="B-">B-</MenuItem>
+          <MenuItem value="AB+">AB+</MenuItem>
+          <MenuItem value="AB-">AB-</MenuItem>
+          <MenuItem value="O+">O+</MenuItem>
+          <MenuItem value="O-">O-</MenuItem>
+        </TextField>
+      </Grid>
 
-  </Dialog>  {/* ================= Patients Table ================= */}
+    </Grid>
+  </DialogContent>
+
+  <DialogActions>
+    <Button onClick={handleClose}>
+      Cancel
+    </Button>
+
+    <Button
+      variant="contained"
+      onClick={handleSubmit}
+    >
+      {editingId ? "Update" : "Save"}
+    </Button>
+  </DialogActions>
+</Dialog> 
+  {/* ================ Patients Table ================= */}
 
   <Paper
     sx={{
@@ -556,7 +540,7 @@ function Patients() {
       {snackbar.message}
     </Alert>
 
-  </Snackbar>
+</Snackbar>
 
 </Box>
 

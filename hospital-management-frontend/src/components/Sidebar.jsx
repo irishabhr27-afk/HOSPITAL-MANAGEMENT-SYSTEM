@@ -172,13 +172,17 @@ function Sidebar() {
                   </ListItemIcon>
 
                   <ListItemText
-                    primary={item.text}
-                    primaryTypographyProps={{
-                      fontSize: 15,
-                      fontWeight: 600,
-                      letterSpacing: 0.3,
-                    }}
-                  />
+                      primary={item.text}
+                      slotProps={{
+                        primary: {
+                          sx: {
+                            fontSize: 15,
+                            fontWeight: 600,
+                            letterSpacing: 0.3,
+                          },
+                        },
+                      }}
+                    />
                 </ListItemButton>
               )}
             </NavLink>

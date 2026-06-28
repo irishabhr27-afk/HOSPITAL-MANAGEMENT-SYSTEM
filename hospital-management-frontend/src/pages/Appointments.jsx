@@ -242,19 +242,21 @@ function Appointments() {
       borderRadius: 4,
     }}
   >
-    <TextField
-      fullWidth
-      placeholder="Search patient..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position="start">
-            <Search />
-          </InputAdornment>
-        ),
-      }}
-    />
+   <TextField
+  fullWidth
+  placeholder="Search patient..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  slotProps={{
+    input: {
+      startAdornment: (
+        <InputAdornment position="start">
+          <Search />
+        </InputAdornment>
+      ),
+    },
+  }}
+/>
   </Paper>
 
   {/* ================= DIALOG ================= */}

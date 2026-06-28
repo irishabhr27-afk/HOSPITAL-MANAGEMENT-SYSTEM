@@ -673,7 +673,155 @@ py: 3,
 
 </Grid>
 
+{/* ================= ABOUT PROJECT ================= */}
+
+<Paper
+  sx={{
+    mt: 5,
+    p: 4,
+    borderRadius: 3,
+    border: "1px solid #E2E8F0",
+    bgcolor: "#FFFFFF",
+    boxShadow: "0 8px 24px rgba(15,23,42,.05)",
+  }}
+>
+
+  <Typography
+    variant="h5"
+    fontWeight={700}
+    mb={2}
+  >
+    🏥 About Hospital Management System
+  </Typography>
+
+  <Typography
+    color="text.secondary"
+    lineHeight={1.8}
+  >
+    The Hospital Management System is a modern web-based application
+    developed to simplify the management of doctors, patients and
+    appointments. It provides administrators with real-time statistics,
+    appointment scheduling and an intuitive dashboard for efficient
+    hospital operations.
+  </Typography>
+
+  <Grid
+    container
+    spacing={3}
+    mt={2}
+  >
+
+    <Grid item xs={12} md={4}>
+
+      <Paper
+        elevation={0}
+        sx={{
+          p: 3,
+          bgcolor: "#F8FAFC",
+          borderRadius: 3,
+        }}
+      >
+
+        <Typography
+          variant="h6"
+          fontWeight={700}
+          mb={2}
+        >
+          🚀 Technology
+        </Typography>
+
+        <Typography>• React.js</Typography>
+
+        <Typography>• Material UI</Typography>
+
+        <Typography>• Node.js</Typography>
+
+        <Typography>• Express.js</Typography>
+
+        <Typography>• MongoDB</Typography>
+
+      </Paper>
+
+    </Grid>
+
+    <Grid item xs={12} md={4}>
+
+      <Paper
+        elevation={0}
+        sx={{
+          p: 3,
+          bgcolor: "#F8FAFC",
+          borderRadius: 3,
+        }}
+      >
+
+        <Typography
+          variant="h6"
+          fontWeight={700}
+          mb={2}
+        >
+          🎯 Features
+        </Typography>
+
+        <Typography>✔ Doctor Management</Typography>
+
+        <Typography>✔ Patient Management</Typography>
+
+        <Typography>✔ Appointment Scheduling</Typography>
+
+        <Typography>✔ Dashboard Analytics</Typography>
+
+        <Typography>✔ Search & Reports</Typography>
+
+      </Paper>
+
+    </Grid>
+
+    <Grid item xs={12} md={4}>
+
+      <Paper
+        elevation={0}
+        sx={{
+          p: 3,
+          bgcolor: "#F8FAFC",
+          borderRadius: 3,
+        }}
+      >
+
+        <Typography
+          variant="h6"
+          fontWeight={700}
+          mb={2}
+        >
+          📊 System Status
+        </Typography>
+
+        <Typography color="success.main">
+          🟢 Backend Connected
+        </Typography>
+
+        <Typography color="success.main">
+          🟢 MongoDB Connected
+        </Typography>
+
+        <Typography color="success.main">
+          🟢 REST API Running
+        </Typography>
+
+        <Typography color="success.main">
+          🟢 Dashboard Active
+        </Typography>
+
+      </Paper>
+
+    </Grid>
+
+  </Grid>
+
+</Paper>
+
 </Box>
 );
 }
+
 export default Dashboard;

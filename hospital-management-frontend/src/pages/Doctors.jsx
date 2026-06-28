@@ -34,6 +34,8 @@ function Doctors() {
 
   const [doctors, setDoctors] = useState([]);
 
+  const [loading, setLoading] = useState(true);
+
   const [search, setSearch] = useState("");
 
   const [open, setOpen] = useState(false);
@@ -65,7 +67,16 @@ function Doctors() {
       setDoctors(res.data);
     } catch (err) {
       console.log(err);
+    } finally {
+      setLoading(false);  
     }
+  }
+if(loading){
+    return (
+      <Box>
+        <Typography variant="h6">Loading...</Typography>
+      </Box>
+    );
   }
 
   const handleChange = (e) => {
@@ -245,19 +256,21 @@ function Doctors() {
     }}
   >
 
-    <TextField
-      fullWidth
-      placeholder="Search doctor by name..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position="start">
-            <Search />
-          </InputAdornment>
-        ),
-      }}
-    />
+   <TextField
+  fullWidth
+  placeholder="Search patient..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  slotProps={{
+    input: {
+      startAdornment: (
+        <InputAdornment position="start">
+          <Search />
+        </InputAdornment>
+      ),
+    },
+  }}
+/>
 
   </Paper>
 
