@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F8FAFC;
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+.main-area{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.content{
+
+    padding:30px;
+
+    flex:1;
+
+    background:#F8FAFC;
+}

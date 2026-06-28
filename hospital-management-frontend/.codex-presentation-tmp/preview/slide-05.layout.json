@@ -1,0 +1,454 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hsp6o9",
+    "id": "hsp6o9",
+    "slide": 5,
+    "layoutId": "dfea683b-2af8-4092-9cf8-d669f3d1435f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6952d88e-306f-44b5-82e2-867ad5d45cf9",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8FAFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "dfea683b-2af8-4092-9cf8-d669f3d1435f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6952d88e-306f-44b5-82e2-867ad5d45cf9",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6952d88e-306f-44b5-82e2-867ad5d45cf9",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlkjm1c",
+      "id": "1",
+      "bbox": [
+        72,
+        56,
+        900,
+        64
+      ],
+      "geometry": "rect",
+      "text": "API Integration",
+      "textPreview": "API Integration",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "API Integration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "API Integration",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "API Integration",
+              "fontSize": 42,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87ed8bat",
+      "id": "2",
+      "bbox": [
+        74,
+        124,
+        900,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Frontend communicates with backend REST APIs",
+      "textPreview": "Frontend communicates with backend REST APIs",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#45556C",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Frontend communicates with backend REST APIs"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Frontend communicates with backend REST APIs",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#45556C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Frontend communicates with backend REST APIs",
+              "fontSize": 20,
+              "color": "#45556C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xs72x4na",
+      "id": "3",
+      "bbox": [
+        92,
+        185,
+        760,
+        36
+      ],
+      "geometry": "rect",
+      "text": "Base URL: http://localhost:5000/api",
+      "textPreview": "Base URL: http://localhost:5000/api",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Base URL: http://localhost:5000/api"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Base URL: http://localhost:5000/api",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Base URL: http://localhost:5000/api",
+              "fontSize": 24,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "4",
+      "bbox": [
+        96,
+        270,
+        740,
+        152
+      ],
+      "geometry": "rect",
+      "text": "- /api/doctors for doctor records\n- /api/patients for patient records\n- /api/appointments for appointment booking\n- CRUD operations use GET, POST, PUT, and DELETE",
+      "textPreview": "- /api/doctors for doctor records | - /api/patients for patient records | - /api/appointments for appointment booking | - CRUD operations...",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#314158",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- /api/doctors for doctor records"
+          },
+          {
+            "index": 2,
+            "text": "- /api/patients for patient records"
+          },
+          {
+            "index": 3,
+            "text": "- /api/appointments for appointment booking"
+          },
+          {
+            "index": 4,
+            "text": "- CRUD operations use GET, POST, PUT, and DELETE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- /api/doctors for doctor records",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#314158",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- /api/doctors for doctor records",
+              "fontSize": 22,
+              "color": "#314158",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- /api/patients for patient records",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#314158",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- /api/patients for patient records",
+              "fontSize": 22,
+              "color": "#314158",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- /api/appointments for appointment booking",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#314158",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- /api/appointments for appointment booking",
+              "fontSize": 22,
+              "color": "#314158",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- CRUD operations use GET, POST, PUT, and DELETE",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#314158",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- CRUD operations use GET, POST, PUT, and DELETE",
+              "fontSize": 22,
+              "color": "#314158",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "chart",
+      "scope": "slide",
+      "aid": "ch/z25kb6xk",
+      "id": "5",
+      "bbox": [
+        840,
+        240,
+        300,
+        260
+      ],
+      "chartType": "bar"
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8z25kb6x",
+      "id": "6",
+      "bbox": [
+        72,
+        670,
+        260,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Hospital Management System | 5",
+      "textPreview": "Hospital Management System | 5",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#90A1B9",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hospital Management System | 5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hospital Management System | 5",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#90A1B9",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hospital Management System | 5",
+              "fontSize": 12,
+              "color": "#90A1B9",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

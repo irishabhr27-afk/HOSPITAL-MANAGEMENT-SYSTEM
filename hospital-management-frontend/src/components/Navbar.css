@@ -1,0 +1,141 @@
+.topbar{
+
+    height:80px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.topbar-left h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#1e293b;
+}
+
+.topbar-left p{
+
+    margin:2px 0 0;
+
+    color:#64748b;
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#F8FAFC;
+
+    border-radius:30px;
+
+    padding:12px 18px;
+
+    width:320px;
+}
+
+.search-box input{
+
+    border:none;
+
+    background:none;
+
+    width:100%;
+
+    outline:none;
+}
+
+.notification-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.notification-btn:hover{
+
+    transform:scale(1.08);
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+.profile-img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:18px;
+}
+
+.profile h5{
+
+    margin:0;
+
+    font-size:15px;
+}
+
+.profile span{
+
+    color:#64748b;
+
+    font-size:13px;
+}

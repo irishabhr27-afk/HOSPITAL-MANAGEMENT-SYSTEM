@@ -1,0 +1,77 @@
+{"kind":"deck","id":"pr/axj170","name":"Deck"}
+{"kind":"layout","layoutId":"6952d88e-306f-44b5-82e2-867ad5d45cf9","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"dfea683b-2af8-4092-9cf8-d669f3d1435f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ld8jkv","slide":1,"title":"Hospital Management System","textShapes":5}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":1,"text":"Hospital Management System","textPreview":"Hospital Management System","textChars":26,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":1,"text":"Internship project presentation","textPreview":"Internship project presentation","textChars":31,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"shape","id":"sh/t83itgfm","slide":1,"bbox":[720,190,400,260]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":1,"text":"React + Vite\nMaterial UI\nExpress API\nMongoDB","textPreview":"React + Vite | Material UI | Express API | MongoDB","textChars":44,"textLines":4,"bbox":[770,240,310,180]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":1,"text":"A web application for managing doctors, patients, and appointments through a clean dashboard and CRUD screens.","textPreview":"A web application for managing doctors, patients, and appointments through a clean dashboard and CRUD screens.","textChars":110,"textLines":1,"bbox":[72,220,560,140]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":1,"text":"Hospital Management System | 1","textPreview":"Hospital Management System | 1","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/ld8jkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/vqtk9m","slide":2,"title":"Project Objectives","textShapes":5}
+{"kind":"textbox","id":"sh/4r65wjud","slide":2,"text":"Project Objectives","textPreview":"Project Objectives","textChars":18,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":2,"text":"What the system is designed to solve","textPreview":"What the system is designed to solve","textChars":36,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":2,"text":"- Maintain doctor records\n- Maintain patient records\n- Schedule and manage appointments\n- Show hospital statistics in one dashboard\n- Provide a simple interface for academic demonstration","textPreview":"- Maintain doctor records | - Maintain patient records | - Schedule and manage appointments | - Show hospital statistics in one dashboard...","textChars":187,"textLines":5,"bbox":[96,210,720,186]}
+{"kind":"shape","id":"sh/xkf6dcbu","slide":2,"bbox":[890,205,260,230]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":2,"text":"Goal\n\nClean, usable, internship-quality hospital management web app.","textPreview":"Goal |  | Clean, usable, internship-quality hospital management web app.","textChars":68,"textLines":3,"bbox":[925,245,190,170]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":2,"text":"Hospital Management System | 2","textPreview":"Hospital Management System | 2","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/vqtk9m","slide":2,"text":""}
+{"kind":"slide","id":"sl/fi9c3p","slide":3,"title":"Technology Stack","textShapes":11}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":3,"text":"Technology Stack","textPreview":"Technology Stack","textChars":16,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":3,"text":"Frontend, backend, and database","textPreview":"Frontend, backend, and database","textChars":31,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":3,"bbox":[92,205,500,130]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":3,"text":"Frontend","textPreview":"Frontend","textChars":8,"textLines":1,"bbox":[120,227,420,34]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":3,"text":"React, Vite, Material UI, React Router","textPreview":"React, Vite, Material UI, React Router","textChars":38,"textLines":1,"bbox":[120,267,420,44]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":3,"bbox":[666,205,500,130]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":3,"text":"Data/API","textPreview":"Data/API","textChars":8,"textLines":1,"bbox":[694,227,420,34]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":3,"text":"Axios service connected to REST endpoints","textPreview":"Axios service connected to REST endpoints","textChars":41,"textLines":1,"bbox":[694,267,420,44]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":3,"bbox":[92,405,500,130]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":3,"text":"Charts","textPreview":"Charts","textChars":6,"textLines":1,"bbox":[120,427,420,34]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":3,"text":"Recharts weekly appointment analytics","textPreview":"Recharts weekly appointment analytics","textChars":37,"textLines":1,"bbox":[120,467,420,44]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":3,"bbox":[666,405,500,130]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":3,"text":"Backend","textPreview":"Backend","textChars":7,"textLines":1,"bbox":[694,427,420,34]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":3,"text":"Node.js, Express.js, MongoDB, Mongoose","textPreview":"Node.js, Express.js, MongoDB, Mongoose","textChars":38,"textLines":1,"bbox":[694,467,420,44]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":3,"text":"Hospital Management System | 3","textPreview":"Hospital Management System | 3","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/fi9c3p","slide":3,"text":""}
+{"kind":"slide","id":"sl/jvtexc","slide":4,"title":"Main Modules","textShapes":11}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":4,"text":"Main Modules","textPreview":"Main Modules","textChars":12,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":4,"text":"The application is organized around four main views","textPreview":"The application is organized around four main views","textChars":51,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"shape","id":"sh/ulwval87","slide":4,"bbox":[92,220,235,240]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":4,"text":"Dashboard","textPreview":"Dashboard","textChars":9,"textLines":1,"bbox":[116,260,185,44]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":4,"text":"Stats and recent records","textPreview":"Stats and recent records","textChars":24,"textLines":1,"bbox":[114,330,190,80]}
+{"kind":"shape","id":"sh/ji5snelo","slide":4,"bbox":[377,220,235,240]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":4,"text":"Doctors","textPreview":"Doctors","textChars":7,"textLines":1,"bbox":[401,260,185,44]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":4,"text":"Doctor CRUD and search","textPreview":"Doctor CRUD and search","textChars":22,"textLines":1,"bbox":[399,330,190,80]}
+{"kind":"shape","id":"sh/8bat47y1","slide":4,"bbox":[662,220,235,240]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":4,"text":"Patients","textPreview":"Patients","textChars":8,"textLines":1,"bbox":[686,260,185,44]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":4,"text":"Patient CRUD and search","textPreview":"Patient CRUD and search","textChars":23,"textLines":1,"bbox":[684,330,190,80]}
+{"kind":"shape","id":"sh/czed8v6p","slide":4,"bbox":[947,220,235,240]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":4,"text":"Appointments","textPreview":"Appointments","textChars":12,"textLines":1,"bbox":[971,260,185,44]}
+{"kind":"textbox","id":"sh/u54zidon","slide":4,"text":"Booking and status update","textPreview":"Booking and status update","textChars":25,"textLines":1,"bbox":[969,330,190,80]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":4,"text":"Hospital Management System | 4","textPreview":"Hospital Management System | 4","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/jvtexc","slide":4,"text":""}
+{"kind":"slide","id":"sl/hsp6o9","slide":5,"title":"API Integration","textShapes":5}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":5,"text":"API Integration","textPreview":"API Integration","textChars":15,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":5,"text":"Frontend communicates with backend REST APIs","textPreview":"Frontend communicates with backend REST APIs","textChars":44,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":5,"text":"Base URL: http://localhost:5000/api","textPreview":"Base URL: http://localhost:5000/api","textChars":35,"textLines":1,"bbox":[92,185,760,36]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":5,"text":"- /api/doctors for doctor records\n- /api/patients for patient records\n- /api/appointments for appointment booking\n- CRUD operations use GET, POST, PUT, and DELETE","textPreview":"- /api/doctors for doctor records | - /api/patients for patient records | - /api/appointments for appointment booking | - CRUD operations...","textChars":162,"textLines":4,"bbox":[96,270,740,152]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":5,"text":"Hospital Management System | 5","textPreview":"Hospital Management System | 5","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"chart","id":"ch/z25kb6xk","slide":5,"name":"","chartType":"bar","bbox":[840,240,300,260]}
+{"kind":"notes","id":"nt/hsp6o9","slide":5,"text":""}
+{"kind":"slide","id":"sl/v106qs","slide":6,"title":"Testing And Demo Flow","textShapes":5}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":6,"text":"Testing And Demo Flow","textPreview":"Testing And Demo Flow","textChars":21,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/obm58z25","slide":6,"text":"How to show the working project","textPreview":"How to show the working project","textChars":31,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":6,"text":"- Run backend server and frontend dev server\n- Add sample doctors and patients\n- Create appointments from existing records\n- Edit and delete one sample record\n- Return to dashboard and verify updated counts","textPreview":"- Run backend server and frontend dev server | - Add sample doctors and patients | - Create appointments from existing records | - Edit a...","textChars":206,"textLines":5,"bbox":[96,205,790,186]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":6,"bbox":[895,230,250,210]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":6,"text":"Verified\n\nnpm run lint\nnpm run build","textPreview":"Verified |  | npm run lint | npm run build","textChars":36,"textLines":4,"bbox":[930,270,180,150]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":6,"text":"Hospital Management System | 6","textPreview":"Hospital Management System | 6","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/v106qs","slide":6,"text":""}
+{"kind":"slide","id":"sl/uxynav","slide":7,"title":"Conclusion And Future Scope","textShapes":5}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":7,"text":"Conclusion And Future Scope","textPreview":"Conclusion And Future Scope","textChars":27,"textLines":1,"bbox":[72,56,900,64]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":7,"text":"Current result and possible improvements","textPreview":"Current result and possible improvements","textChars":40,"textLines":1,"bbox":[74,124,900,40]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":7,"text":"- The project demonstrates a working hospital management frontend\n- Core CRUD screens and dashboard are ready for demonstration\n- Future scope includes login, reports, billing, reminders, and deployment","textPreview":"- The project demonstrates a working hospital management frontend | - Core CRUD screens and dashboard are ready for demonstration | - Fut...","textChars":202,"textLines":3,"bbox":[96,210,780,118]}
+{"kind":"shape","id":"sh/8bat47y1","slide":7,"bbox":[910,230,230,210]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":7,"text":"Thank You","textPreview":"Thank You","textChars":9,"textLines":1,"bbox":[940,310,170,52]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":7,"text":"Hospital Management System | 7","textPreview":"Hospital Management System | 7","textChars":30,"textLines":1,"bbox":[72,670,260,24]}
+{"kind":"notes","id":"nt/uxynav","slide":7,"text":""}
