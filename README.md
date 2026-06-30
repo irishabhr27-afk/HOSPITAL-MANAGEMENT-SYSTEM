@@ -117,7 +117,17 @@ http://localhost:5000/api
 ```
 
 ---
+# Hospital Management System
 
+## Live Demo
+
+🔗 https://hospital-management-system-1-74y3.onrender.com
+
+## Features
+- Patient Management
+- Doctor Management
+- Appointment Booking
+- Authentication
 ## 📁 Documentation
 
 Detailed documentation is available inside each folder.
